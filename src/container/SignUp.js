@@ -212,7 +212,7 @@ export default function SignUp(){
             </div>
             <div className="wrapper">
                 <h1>Sign Up</h1>
-                <p>Already have an account? Sign in</p>
+                <a href="#">Already have an account? Sign in</a>
                 <input type="text" name="firstname" placeholder="First name"/>
                 <input type="text" name="lastname" placeholder="Last name"/>
                 <input type="number" name="phone" placeholder="Phone"/>

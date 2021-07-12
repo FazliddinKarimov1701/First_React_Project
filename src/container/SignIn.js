@@ -213,7 +213,7 @@ export default function SignIn(){
             </div>
             <div className="wrapper">
                 <h1>Sign In</h1>
-                <p>Do not you have an account? Sign up</p>
+                <a href="#">Do not you have an account? Sign up</a>
                 <input type="email" name="email" placeholder="Email"/>
                 <input type="password" name="password" placeholder="Password"/>
                 <button type="submit">Next Step →</button>

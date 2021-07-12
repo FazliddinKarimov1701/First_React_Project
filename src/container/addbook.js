@@ -1,10 +1,11 @@
 import React from 'react';
+import BookImg from "../addbook.png";
 
 export default function AddBook(){
     return (
         <div className="container">
-            <div>
-                <img src="../addbook.png" alt="" />
+            <div style={{textAlign: 'center'}}>
+                <img src={BookImg} alt="asss" />
                 <h1>Ulug'bek hazinasi</h1>  
                 <button>Upload cover</button>  
             </div>
@@ -17,7 +18,7 @@ export default function AddBook(){
                 <input type="text" name="country" placeholder="Country"/>
                 <input type="text" name="author" placeholder="Author"/>
                 <textarea name="description" cols="30" rows="10" placeholder="Description"></textarea>
-                <button type="submit">Next Step →</button>
+                <button type="submit">Create</button>
             </div>
         </div>
     )

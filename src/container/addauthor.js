@@ -1,10 +1,11 @@
 import React from 'react';
+import AuthorImg from '../ulugbek.png'
 
 export default function AddBook(){
     return (
         <div className="container">
-            <div>
-                <img src="../addauthor.png" alt="png file" />
+            <div style={{textAlign: 'center'}}>
+                <img src={AuthorImg} alt="png file" />
                 <h1>Abdulla Avloniy</h1>  
                 <button>Upload image</button>
             </div>
@@ -16,7 +17,7 @@ export default function AddBook(){
                 <input type="number" name="dateofdeath" placeholder="Date of death"/>
                 <input type="text" name="country" placeholder="Country"/>
                 <textarea name="bio" cols="30" rows="10" placeholder="Bio"></textarea>
-                <button type="submit">Next Step →</button>
+                <button type="submit">Create</button>
             </div>
         </div>
     )
