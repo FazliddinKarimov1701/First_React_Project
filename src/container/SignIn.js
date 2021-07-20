@@ -1,9 +1,14 @@
-import React from 'react';
-import './signin.css'
+import React, {useState} from 'react';
+import classes from './SignIn.module.css'
 
 export default function SignIn(){
+    const [state, setState] = useState({
+      email: '',
+      password: ''  
+    })
+
     return (
-        <div className="container">
+        <div className={classes.container}>
             <div>
                 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M431.67 117.79C434.047 116.74 436.064 115.016 437.472 112.832C438.88 110.648 439.616 108.099 439.59 105.5C439.59 98.16 434.06 92.19 427.18 92.16C420.3 92.13 414.7 98.05 414.67 105.39C414.621 108.01 415.349 110.586 416.762 112.792C418.175 114.999 420.21 116.738 422.61 117.79C403.44 120.68 404.31 141.52 404.31 141.52L449.64 141.73C449.64 141.73 450.68 120.66 431.67 117.79Z" fill="#F5F5F5"/>
@@ -211,7 +216,7 @@ export default function SignIn(){
                     <path d="M139 299.57C139.09 299.57 141.14 287.62 143.58 272.85C146.02 258.08 147.93 246.08 147.84 246.07C147.75 246.06 145.69 258.02 143.25 272.79C140.81 287.56 138.92 299.56 139 299.57Z" fill="#263238"/>
                 </svg>
             </div>
-            <div className="wrapper">
+            <div className={classes.wrapper}>
                 <h1>Sign In</h1>
                 <a href="#">Do not you have an account? Sign up</a>
                 <input type="email" name="email" placeholder="Email"/>

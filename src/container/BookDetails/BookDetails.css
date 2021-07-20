@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Rotterburg';
+    src: url(../../assets/Rotterburg\ Display\ Font.otf);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+span{
+    color: white;
+}
+p{
+    color: rgb(212, 212, 212);
+}
+.BookDetails{
+    display: flex;
+    margin: 60px 80px;
+}
+.BookInfo{
+    margin-left: 60px;
+}
+.BookInfoWrapper1 h1{
+    font-family: 'Rotterburg';
+    color: #C9AC8C;
+    font-size: 40px;
+}
+.BookInfoWrapper1 h2{
+    font-size: 16px;
+    color: #C9AC8C;
+    margin-bottom: 30px;
+}
+.BookInfoWrapper2 h3{
+    margin: 40px 0;
+}
+.BookInfoWrapper2 div h3{
+    margin: 40px 0;
+}   
+.BookInfoWrapper2 p{
+    line-height: 1.4;
+    word-spacing: 5px;
+}
+.Formats{
+    display: flex;
+    text-align: center;
+}
+.Formats-Item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+}
+.Formats-Item img{
+    margin-bottom: 10px;
+}
+.Formats button{
+    width: 230px;
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: #C9AC8C;
+    color: rgb(41, 40, 40);
+}
+.comments-section{
+    margin-left: 80px;
+}
+.comment-menu{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.comment-menu li a{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.active-comment-menu{
+    color: #d4b696;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.comments div{
+    width: 680px;
+    height: 150px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 60px;
+    background: linear-gradient(90deg, #302f2f, #332f2f, rgb(41,40,40));
+    border-radius: 15px;
+}   
+.comments div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.comments div div img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.recommendation{
+    margin-left: 80px;
+}
+.recommendation ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.recommended-books{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    overflow: hidden;
+}
+.recommended-books-item{
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.recommended-books-item img{
+    width: 150px;
+    height: 170px;
+}
+.recommended-books-item div{
+    padding: 7px;
+    text-align: left;
+}
+.recommended-books-item div h2{
+    font-size: 15px;
+    margin: 0;
+    color: #C9AC8C;
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
+.recommended-books-item div p{
+    font-size: 12px;
+}
+.comments div p{
+    word-spacing: 5px;
+}

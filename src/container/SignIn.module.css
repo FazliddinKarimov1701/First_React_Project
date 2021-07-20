@@ -24,20 +24,24 @@ input{
     height: 35px;
     padding: 5px 20px;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: none;
     border: 1px solid grey;
     margin: 10px 0;
+    background-color: rgba(19, 18, 18, 0.897);
+    color: white;
 }
 textarea{
     width: 300px;
     height: 100px;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 25px;
+    border-radius: 10px;
     outline: none;
     border: 1px solid grey;
+    background-color: rgba(19, 18, 18, 0.897);
     margin: 10px 0;
+    color: white;
 }
 button{
     width: 347px;
@@ -45,13 +49,13 @@ button{
     padding: 7px;
     border-radius: 22px;
     font-size: 18px;
-    border: 1px solid red;
-    background-color: white;
-    color: red;
+    border: 1px solid #b69a7c;
+    background-color: rgba(36, 35, 35, 0.897);
+    color: #b69a7c;
     transition: 0.3s;
     margin: 10px 0;
 }
 button:hover{
-    background-color: red;
-    color: white;
+    background-color: #b69a7c;
+    color: rgba(36, 35, 35, 0.897);
 }

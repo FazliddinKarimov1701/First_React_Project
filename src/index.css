@@ -13,7 +13,7 @@ a{
     padding: 10px 20px;
 }
 .active{
-    border: 2px solid red;
-    color: red;
+    border: 2px solid #b69a7c;
+    color: #caac8b;
     border-radius: 10px;
 }

@@ -1,15 +1,16 @@
 import React from 'react';
-import AuthorImg from '../ulugbek.png'
+import AuthorImg from '../Img/ulugbek.png';
+import classes from './SignIn.module.css';
 
 export default function AddBook(){
     return (
-        <div className="container">
+        <div className={classes.container}>
             <div style={{textAlign: 'center'}}>
                 <img src={AuthorImg} alt="png file" />
                 <h1>Abdulla Avloniy</h1>  
                 <button>Upload image</button>
             </div>
-            <div className="wrapper">
+            <div className={classes.wrapper}>
                 <h1>Add Author</h1>
                 <input type="text" name="firstname" placeholder="First name"/>
                 <input type="text" name="lastname" placeholder="Last name"/>

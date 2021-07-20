@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@font-face {
+    font-family: 'Rotterburg';
+    src: url(../../assets/Rotterburg\ Display\ Font.otf);
+}
+body{
+    background-color: rgba(19, 18, 18, 0.897);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#intro{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+}
+#search_sec{
+    position: relative;
+    background-color: rgb(27, 26, 26);
+    padding: 40px 170px;
+    border-radius: 20px;
+    top: 250px;
+}
+#search_sec h1{
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
+.search_input{
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+.submit_btn{
+    background-color: rgb(41, 40, 40);
+    width: 120px;
+    color: #C9AC8C;
+    border: 1px solid #C9AC8C;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.submit_btn:hover{
+    background-color: rgb(41, 40, 40);
+}
+.intro_background{
+    position: absolute;
+    margin-top: 120px;
+    background: url(../../Img/intro.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 347px;
+}
+#books_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.book-item{
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.book-item img{
+    width: 150px;
+    height: 170px;
+}
+.book-item div{
+    padding: 7px;
+    text-align: left;
+}
+.book-item div h2{
+    font-size: 15px;
+    margin: 0;
+    color: #C9AC8C;
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
+.book-item div p{
+    font-size: 12px;
+}
+.like{
+    font-size: 15px;
+}
+#body{
+    margin-top: 290px;
+    text-align: center;
+}
+#body ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+#body h1{
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
+.active_section{
+    color: #C9AC8C;
+}
+.logo h1{
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
