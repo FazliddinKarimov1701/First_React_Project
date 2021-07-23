@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Rotterburg';
+    src: url(../../assets/Rotterburg\ Display\ Font.otf);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* #author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} */
+#author{
+    display: flex;
+    align-items: center!important;
+    flex-direction: row;
+}
+.AuthorDetails{
+    display: flex;
+    margin-top: 60px;
+}
+.AuthorsBook{
+    display: flex;
+    overflow: hidden;
+}
+.AuthorInfo{
+    margin: 0 60px;
+    max-width: 630px;
+}
+.book_item img{
+    width: 150px;
+
+}
+.book_item{
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.book_item div{
+    padding: 0 10px;
+}
+.book_item h2{
+    font-size: 16px;
+    font-family: 'Rotterburg';
+    color: #C9AC8C;
+}
+.book_item p{
+    font-size: 14px;
+}
+p{
+    word-spacing: 5px;
+}
+.AuthorInfoWrapper2_item{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+    margin-bottom: 20px;
+}
+.AuthorInfoWrapper2_item h1{
+    font-family: 'Rotterburg';
+    color: #C9AC8C;
+    font-size: 35px;
+}
+.logo h1{
+    font-family: 'Rotterburg';
+}
+.AuthorInfoWrapper1 h1{
+    font-family: 'Rotterburg';
+    font-size: 40px;
+    color: #C9AC8C;
+    margin: 20px 0;
+}
+.AuthorInfoWrapper1 h3{
+    color: #C9AC8C;
+    font-size: 20px;
+    font-family: 'Rotterburg';
+}
+.AuthorBirthInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+.AuthorBirthInfo h1{
+    color: #C9AC8C;
+    font-family: 'Rotterburg';
+    font-size: 45px;
+}
+.AuthorBirthInfo p{
+    margin: 2px;
+}

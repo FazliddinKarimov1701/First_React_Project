@@ -1,5 +1,5 @@
 import React from 'react';
-import {} from './BookDetails.css';
+import classes from './BookDetails.module.css';
 import BookImg from '../../Img/addbook.png';
 import AuthorImg from '../../Img/ulugbek.png';
 import AudioBook from '../../Img/audio.png';
@@ -9,12 +9,13 @@ import Starred from '../../Img/star.png';
 import Share from '../../Img/share.png';
 import BookCover from '../../Img/book_cover.png';
 import Heart from '../../Img/heart.png';
+import Arrow from '../../Img/arrow.png';
 
 export default function BookDetails(){
     return (
-        <div id="BookDetailsBody">
-            <div className="header">
-                <div className="logo">
+        <div id={classes.BookDetailsBody}>
+            <div className={classes.header}>
+                <div className={classes.logo}>
                     <h1 style={{color: '#C9AC8C'}}>Badiiyat</h1>
                 </div>
                 <ul>
@@ -24,18 +25,18 @@ export default function BookDetails(){
                     <li><a href="#">Maqolalar</a></li>
                     <li><a href="#">Forum</a></li>
                 </ul>
-                <div id="author">
-                    <img src={AuthorImg} alt="authorImg" />
-                    <p>↓</p>
+                <div style={{display:'flex',alignItems:'center'}} id={classes.author}>
+                    <img style={{width: '40px',height:'40px',borderRadius:'50%'}} src={AuthorImg} alt="authorImg" />
+                    <img style={{width: '12px', height: '10px', marginLeft: '3px'}} src={Arrow} alt="arrow" />
                 </div>
             </div>
-            <div className="body">
-                <div className="BookDetails">
-                    <div className="BookPic">
+            <div className={classes.body}>
+                <div className={classes.BookDetails}>
+                    <div className={classes.BookPic}>
                         <img src={BookCover} alt="bookimg" />
                     </div>
-                    <div className="BookInfo">
-                        <div className="BookInfoWrapper1">
+                    <div className={classes.BookInfo}>
+                        <div className={classes.BookInfoWrapper1}>
                             <h1>Qo'rqma</h1>
                             <h2>Javlon Joliyev | <img src={Starred} alt="star" /> 45</h2>
                             <p>Sahifalar Soni : <span>345</span></p>
@@ -43,7 +44,7 @@ export default function BookDetails(){
                             <p>Janri : <span>Tarixiy</span></p>
                             <p>Nashriyot : <span>Nihol Nashr</span></p>
                         </div>
-                        <div className="BookInfoWrapper2">
+                        <div className={classes.BookInfoWrapper2}>
                             <h3>To'liq Malumot ↓</h3>
                             <p>Роман ўтган асрнинг йигирманчи йилларида Германияда таҳсил олган ва собиқ Совет Иттифоқи 
                                 томонидан шафқатсизларча қатл этилган миллат йигит-қизларининг  хотирасига бағишланади.
@@ -59,18 +60,18 @@ export default function BookDetails(){
                             </p>
                             <div>
                                 <h3>Mavjud Formatlar</h3>
-                                <div className="Formats">
-                                    <div className="Formats-Item">
+                                <div className={classes.Formats}>
+                                    <div className={classes.Formats_Item}>
                                         <img src={PaperBook} alt="Paperbook" />
                                         <span>Qog'oz Kitob</span>
                                         <p>27000 so'm</p>
                                     </div>
-                                    <div className="Formats-Item">
+                                    <div className={classes.Formats_Item}>
                                         <img src={AudioBook} alt="Audiobook" />
                                         <span>Audiokitob</span>
                                         <p>6.23 soat</p>
                                     </div>
-                                    <div className="Formats-Item">
+                                    <div className={classes.Formats_Item}>
                                         <img src={Ebook} alt="Ebook" />
                                         <span>Elektron</span>
                                         <p>pdf, epub</p>
@@ -81,13 +82,13 @@ export default function BookDetails(){
                         </div>
                     </div>
                 </div>
-                <div className="comments-section">
-                    <ul className="comment-menu">
+                <div className={classes.comments_section}>
+                    <ul className={classes.comment_menu}>
                         <li><a href="#">Muallif Haqida</a></li>
-                        <li><a href="#" className='active-comment-menu'>Kitobdan Iqtiboslar</a></li>
+                        <li><a href="#" className={classes.active_comment_menu}>Kitobdan Iqtiboslar</a></li>
                         <li><a href="#">Kitobxonlar Taqrizi</a></li>
                     </ul>
-                    <div className="comments">
+                    <div className={classes.comments}>
                         <div>
                             <blockquote></blockquote>
                             <p>Inson bolasi ne kunlarni ko‘rmaydi?!
@@ -111,66 +112,66 @@ export default function BookDetails(){
                         </div>
                     </div>
                 </div>
-                <div className="recommendation">
+                <div className={classes.recommendation}>
                     <ul>
                         <li><a style={{color: '#d4b696'}} href="#">Sizga yoqishi mumkin</a></li>
                         <li><a href="#">Barchasini Ko'rish</a></li>   
                     </ul>    
-                    <div className="recommended-books">
-                        <div className="recommended-books-item">
+                    <div className={classes.recommended_books}>
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
-                        <div className="recommended-books-item">
+                        <div className={classes.recommended_books_item}>
                             <img src={BookImg} alt="BookImg"/>
                             <div>
                                 <h2>Ikki Eshik Orasida</h2>
                                 <p>O'tkir Hoshimov</p>
-                                <p><b className="like">♥</b> 4,3 - 2340 ta fikrlar</p>
+                                <p><b className={classes.like}>♥</b> 4,3 - 2340 ta fikrlar</p>
                             </div>
                         </div>
                     </div>
