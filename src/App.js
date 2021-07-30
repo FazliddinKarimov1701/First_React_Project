@@ -8,6 +8,7 @@ import BooksPage from './container/BooksPage/booksPage';
 import AuthorsPage from './container/AuthorsPage/author';
 import BookDetails from './container/BookDetails/BookDetails.js';
 import AuthorDetails from './container/AuthorDetails/AuthorDetails';
+import Dashboard from './container/Dashboard/Dashboard';
 import './index.css';
 
 function App(){
@@ -23,6 +24,7 @@ function App(){
                 <NavLink exact to='./authors'>Authors</NavLink>
                 <NavLink exact to='./bookdetails'>Book</NavLink>
                 <NavLink exact to='./authordetails'>Author</NavLink>
+                <NavLink exact to='./dashboard'>Dashboard</NavLink>
             </header>
            <Switch>
                <Route component={SignIn} exact path="/sign-in"/>
@@ -33,6 +35,7 @@ function App(){
                <Route component={AuthorsPage} exact path="/authors"/>
                <Route component={BookDetails} exact path="/bookdetails"/>
                <Route component={AuthorDetails} exact path="/authordetails"/>
+               <Route component={Dashboard} exact path="/dashboard"/>
            </Switch>
         </div>
     )

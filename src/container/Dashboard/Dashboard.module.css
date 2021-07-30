@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Rotterburg';
+    src: url(../../assets/Rotterburg\ Display\ Font.otf);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 19px;
+}
+.logo h1{
+    font-family: 'Rotterburg';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#author img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.UserInfo{
+    display: flex;
+    background: url(../../Img/user_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: calc(322px-40px);
+    padding: 20px 50px;
+    margin-top: 30px;
+}
+.User_Img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid rgb(250, 236, 207);
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    /* top: 0; */
+}
+.UserLevel{
+    position: relative;
+    left: 60px;
+    top: 125px;
+    width: 20px;
+    padding: 10px;
+    border: 1px solid #C9AC8C;
+    border-radius: 50%;
+    background-color: rgb(41, 40, 40);
+}
+.UserLevelInfo{
+    margin-top: 150px;
+}
+.UserLevelInfo h3{
+    color: #C9AC8C;
+    margin: 0;
+    font-size: 30px
+}
+.UserInfoFirstChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 200px; */
+}
+.UserInfoSecondChild{
+    margin-left: 10px;
+}
+.UserInfoSecondChild h2{
+    color: #C9AC8C;
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.UserInfoSecondChild p{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 10px;
+}
+.UserInfoSecondChild span{
+    color: white;
+}
+.UserBook{
+    display: flex;
+}
+
+#books_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.book_item{
+    width: 150px;
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.book_item img{
+    width: 150px;
+    height: 170px;
+}
+.book_item div{
+    padding: 7px;
+    text-align: left;
+}
+.book_item div h2{
+    font-size: 15px;
+    margin: 0;
+    color: #C9AC8C;
+    font-family: 'Rotterburg';
+    font-weight: 100;
+}
+.book_item div p{
+    font-size: 12px;
+}
+.like{
+    font-size: 15px;
+}
+#userbook{
+    display: flex;
+    
+}
+.BookStatusImg{
+    width: 35px;
+}
+.BookStatusBooksItem{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.BookStatusBooksItem div{
+    margin: 0 5px;
+}
+.BookStatusBooksItem div button{
+    width: 120px;
+    height: 24px;
+    padding: 0px 7px;
+    border-radius: 5px;
+    background-color: #C9AC8C;
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+.BookStatusBooksItem h5{
+    margin: 10px 0;
+    margin-top: 0;
+}
+.BookStatusBooksItem p{
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 90px;
+}
+.ProgressImg{
+    height: 24px;
+}
+.BookStatusButton button{
+    border-radius: 5px;
+    background-color: #C9AC8C;
+    color: black;
+    font-size: 22px;
+}
+.BookStatusMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BookStatusMenu h3{
+    color: #C9AC8C;
+}
+.AudioBook h3{
+    color: #C9AC8C;
+}
+.BookStatus{
+    width: 360px;
+    margin: 20px;
+    padding: 7px 20px;
+    background-color: rgb(32, 31, 31);
+    border-radius: 10px;
+}
+.AudioBook{
+    width: 360px;
+    margin: 20px;
+    padding: 7px 20px;
+    background-color: rgb(32, 31, 31);
+    border-radius: 10px;
+}
+.AudioBookImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AudioBookImg img{
+    width: 47px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.AudioBookConfiguration{
+    text-align: center;
+}
+.AudioBookConfiguration h5{
+    margin: 5px;
+}
+.AudioBookConfiguration p{
+    font-size: 11px;
+}
+.PlayBtn{
+    background-color: #C9AC8C;
+    border-radius: 3px;
+}
+.TrackConfiguration{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 60px;
+}
+.Tracks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.TracksItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 330px;
+    padding: 7px 5px;
+    background-color: rgb(39, 38, 38);
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.TracksItem img{
+    width: 33px;
+    border-radius: 2px;
+}
+.TracksItemTitle h5{
+    margin: 5px 0;
+    color: #C9AC8C;
+}
+.TracksItemTitle p{
+    margin: 0;
+    font-size: 12px;
+}
+.RightSection ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 50px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
